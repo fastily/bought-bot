@@ -17,7 +17,7 @@ setuptools.setup(
     },
     include_package_data=True,
     packages=setuptools.find_packages(include=["bought_bot"]),
-    install_requires=["requests, selenium"],
+    install_requires=["selenium"],
     classifiers=[
         "Natural Language :: English",
         "Programming Language :: Python :: 3",
