@@ -24,7 +24,7 @@ def _main() -> None:
     with Chrome() as driver:
         driver.get(config["url"])
 
-        while not (add_to_cart := fetch_element(driver, ".fulfillment-add-to-cart-button button.btn-primary")):  # "button.btn-primary[data-sku-id='6410839']"
+        while not (add_to_cart := fetch_element(driver, "button.c-button-primary.add-to-cart-button")):  # "button.btn-primary[data-sku-id='6410839']"
             sleep(5)
             driver.refresh()
 
@@ -41,8 +41,8 @@ def _main() -> None:
         sleep(10)
 
         # navigate to checkout page
-        driver.get("https://www.bestbuy.com/checkout/r/payment")
-        fetch_element(driver, "#credit-card-cvv").send_keys(config["cvv"])
+        # driver.get("https://www.bestbuy.com/checkout/r/payment")
+        fetch_element(driver, "#cvv").send_keys(config["cvv"])
 
         # sometimes billing address fields appear
         if fn := fetch_element(driver, "payment.billingAddress.firstName", By.ID):
@@ -63,7 +63,7 @@ def _main() -> None:
             print(element.parent)
             print(element.location)
 
-        # print("reached the end, did we get it?")
+        print("reached the end, did we get it?")
         sleep(20)
 
 
