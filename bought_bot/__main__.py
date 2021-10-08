@@ -24,7 +24,7 @@ def _main() -> None:
     with Chrome() as driver:
         driver.get(config["url"])
 
-        while not (add_to_cart := fetch_element(driver, "button.c-button-primary.add-to-cart-button")):  # "button.btn-primary[data-sku-id='6410839']"
+        while not (add_to_cart := fetch_element(driver, "button.c-button-primary.add-to-cart-button")):
             sleep(5)
             driver.refresh()
 

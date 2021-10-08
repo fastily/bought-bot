@@ -18,6 +18,11 @@ setuptools.setup(
     include_package_data=True,
     packages=setuptools.find_packages(include=["bought_bot"]),
     install_requires=["selenium"],
+    entry_points={
+        'console_scripts': [
+            'bought_bot = bought_bot.__main__:_main'
+        ]
+    },
     classifiers=[
         "Natural Language :: English",
         "Programming Language :: Python :: 3",
