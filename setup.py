@@ -11,9 +11,9 @@ setuptools.setup(
     description="A bot for automatically buying things on websites",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/fastily/bought_bot",
+    url="https://github.com/fastily/bought-bot",
     project_urls={
-        "Bug Tracker": "https://github.com/fastily/bought_bot/issues",
+        "Bug Tracker": "https://github.com/fastily/bought-bot/issues",
     },
     include_package_data=True,
     packages=setuptools.find_packages(include=["bought_bot"]),

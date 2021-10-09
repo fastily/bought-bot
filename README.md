@@ -13,7 +13,7 @@ Use latest versions of each for best results.
 
 ## Install
 ```bash
-pip install -r requirements.txt
+pip install bought-bot
 ```
 
 ## Run
@@ -24,7 +24,7 @@ Copy the contents of `blank_config.ini` and save it in a new file, `config.ini`,
 
 To run the program:
 ```bash
-python -m bought_bot
+bought_bot
 ```
 
 ## Note
