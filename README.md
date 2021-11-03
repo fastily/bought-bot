@@ -11,19 +11,18 @@ Bot for buying things on websites, to give non-scalpers a fighting chance.  Curr
 
 Use latest versions of each for best results.
 
-## Install
-```bash
-pip install bought-bot
-```
-
 ## Run
 Copy the contents of `blank_config.ini` and save it in a new file, `config.ini`,  in the the bought_bot directory.  Fill in the form in `config.ini`, and be sure you have saved a credit card in your account details online.
 
 * Set `url = ` to the url of the item to purchase
 * Set `live = True` if you want the bot to actually try purchasing something.  To perform a dry run (do everything except purchase), leave this field blank.
 
-To run the program:
+Running the program:
 ```bash
+# from source
+python -m bought_bot
+
+# installed with pip
 bought_bot
 ```
 
